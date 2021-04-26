@@ -19,8 +19,8 @@ Installation :
 
 🙄rm -rf hpro
 
-🙄 git clone https://github.com/asgharmalik37/hpro
+🙄 git clone https://github.com/Arbab-Memon/hpro
 
 🙄 cd hpro
 
-🙄 python2 Malik.py
+🙄 python2 Arbab.py
